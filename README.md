@@ -5,7 +5,7 @@ A console PBO creator for Arma 3
 Download the files in the "Download" directory and then browse to that folder on your computer and open a console window. Then you could type something like:
 PBOer "where/your/arma/mission/is" "where/you/want/your/pbo"
 or
-PBO "C:\Users\UserName\Documents\Arma 3\missions" "C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MPMissions"
+PBO "C:\Users\UserName\Documents\Arma 3\missions\myNewMission.stratis" "C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MPMissions"
 
 # Filter
 In the PBOer.exe.config you'll be able to turn some filters on or off. These filters will exclude files from your mission directory. Default is all filter on.
