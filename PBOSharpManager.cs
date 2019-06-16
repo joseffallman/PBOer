@@ -1,9 +1,9 @@
 ﻿/*
- * Author: Josef Fällman
- * Created: 2019-06-16
- * github: https://github.com/joseffallman/PBOer
- * 
- * License: GPLv3 se LICENSE file
+ *  This file is part of PBOer.
+ *  
+ *  Copyright 2019 by Josef Fällman
+ *  Licensed under GNU General Public License 3.0
+ *  
  */
 
 using System;
@@ -21,7 +21,7 @@ namespace PBOer
     public class PBOSharpManager : PBOSharp.PBOSharpClient
     {
 
-        public new event PBOSharpEventHandler onEvent;
+        public event PBOSharpEventHandler OnEvent;
         private IConfigs _configs;
 
         public PBOSharpManager(Interface.IConfigs configs)
@@ -92,8 +92,8 @@ namespace PBOer
         /// </summary>
         /// <param name="message"></param>
         /// <param name="type"></param>
-        internal void PushOnEvent(string message, EventType type)
-            => onEvent?.Invoke(new PBOSharpEventArgs(message, type));
+        internal new void PushOnEvent(string message, EventType type)
+            => OnEvent?.Invoke(new PBOSharpEventArgs(message, type));
 
     }
 }

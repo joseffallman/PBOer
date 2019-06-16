@@ -48,9 +48,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PBOSharp">
-      <HintPath>References\PBOSharp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -65,7 +62,16 @@
   <ItemGroup>
     <Compile Include="Configs\ConsolConfigs.cs" />
     <Compile Include="Interface\IConfigs.cs" />
+    <Compile Include="PBOSharp\Enums\EventType.cs" />
+    <Compile Include="PBOSharp\Enums\PackingMethod.cs" />
+    <Compile Include="PBOSharp\Objects\PBO.cs" />
+    <Compile Include="PBOSharp\Objects\PBOFile.cs" />
+    <Compile Include="PBOSharp\Objects\PBOPrefix.cs" />
+    <Compile Include="PBOSharp\Objects\PBOSharpEventArgs.cs" />
+    <Compile Include="PBOSharp\PBOReader.cs" />
+    <Compile Include="PBOSharp\PBOSharpClient.cs" />
     <Compile Include="PBOSharpManager.cs" />
+    <Compile Include="PBOSharp\PBOWriter.cs" />
     <Compile Include="PBOWriterManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,5 +91,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

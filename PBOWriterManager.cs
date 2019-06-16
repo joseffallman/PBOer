@@ -1,9 +1,9 @@
 ﻿/*
- * Author: Josef Fällman
- * Created: 2019-06-16
- * github: https://github.com/joseffallman/PBOer
- * 
- * License: GPLv3 se LICENSE file
+ *  This file is part of PBOer.
+ *  
+ *  Copyright 2019 by Josef Fällman
+ *  Licensed under GNU General Public License 3.0
+ *  
  */
 
 using System;
@@ -42,7 +42,7 @@ namespace PBOer
         /// <param name="folder"></param>
         /// <param name="packDirectory"></param>
         /// <param name="pboName"></param>
-        internal void WritePBO(string folder, string packDirectory, string pboName)
+        internal new void WritePBO(string folder, string packDirectory, string pboName)
         {
             try
             {
