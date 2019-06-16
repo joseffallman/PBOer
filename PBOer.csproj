@@ -70,9 +70,9 @@
     <Compile Include="PBOSharp\Objects\PBOSharpEventArgs.cs" />
     <Compile Include="PBOSharp\PBOReader.cs" />
     <Compile Include="PBOSharp\PBOSharpClient.cs" />
-    <Compile Include="PBOSharpManager.cs" />
+    <Compile Include="PBOSharpWrapper.cs" />
     <Compile Include="PBOSharp\PBOWriter.cs" />
-    <Compile Include="PBOWriterManager.cs" />
+    <Compile Include="PBOWriterWrapper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

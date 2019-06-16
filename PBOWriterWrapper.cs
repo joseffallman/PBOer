@@ -18,12 +18,12 @@ using PBOer.Interface;
 
 namespace PBOer
 {
-    public class PBOWriterManager : PBOSharp.PBOWriter
+    public class PBOWriterWrapper : PBOSharp.PBOWriter
     {
-        private PBOSharpManager _client;
+        private PBOSharpWrapper _client;
         private IConfigs _configs;
 
-        public PBOWriterManager(Stream stream, PBOSharpManager client, IConfigs configs)
+        public PBOWriterWrapper(Stream stream, PBOSharpWrapper client, IConfigs configs)
             : base(stream, client)
         {
             _client = client;

@@ -18,13 +18,13 @@ using PBOer.Interface;
 
 namespace PBOer
 {
-    public class PBOSharpManager : PBOSharp.PBOSharpClient
+    public class PBOSharpWrapper : PBOSharp.PBOSharpClient
     {
 
         public event PBOSharpEventHandler OnEvent;
         private IConfigs _configs;
 
-        public PBOSharpManager(Interface.IConfigs configs)
+        public PBOSharpWrapper(Interface.IConfigs configs)
         {
             _configs = configs;
         }
@@ -74,7 +74,7 @@ namespace PBOer
                 FileStream fileStream = new FileStream(pboFilePath, FileMode.Create, FileAccess.Write);
 
                 //Write the file content
-                PBOWriterManager writer = new PBOWriterManager(fileStream, this, _configs);
+                PBOWriterWrapper writer = new PBOWriterWrapper(fileStream, this, _configs);
                 writer.WritePBO(folder, packDirectory, pboFilePath);
 
                 fileStream.Dispose();
