@@ -40,7 +40,7 @@ namespace PBOer
     {
         public static void Main(string[] args)
         {
-            //new Orginal(args[0]);
+            PrintCopyrightNotice();
 
             string folder, exportTo, pboName;
             switch (args.Length)
@@ -67,7 +67,7 @@ namespace PBOer
             }
         }
 
-        private void PrintCopyrightNotice()
+        public static void PrintCopyrightNotice()
         {
             Console.WriteLine(":          PBOer           :");
             Console.WriteLine("Copyright 2019 Josef Fällman");
@@ -83,6 +83,7 @@ namespace PBOer
             Console.WriteLine("");
             Console.WriteLine("This program incorporates work covered by the following copyright and permission notice: ");
             Console.WriteLine("PBOSharp - Copyright 2017 by Paton7 <https://github.com/Paton7/PBOSharp>");
+            Console.WriteLine("");
         }
     }
 }
