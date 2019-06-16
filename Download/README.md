@@ -18,8 +18,8 @@ You can decide among these filters:
   5. Git - Exclude everything .git related
 
 # Copyright
-Copyright 2019 by Josef Fällman
+Copyright 2019 by Josef FÃ¤llman
 Licensed under GNU General Public License 3.0
 
-# This program incorporates work covered by the following copyright and permission notice: 
+This program incorporates work covered by the following copyright and permission notice: 
 PBOSharp - Copyright 2017 by Paton7 <https://github.com/Paton7/PBOSharp>
