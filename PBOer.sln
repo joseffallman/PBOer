@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBOer", "PBOer.csproj", "{35FAA84B-7873-4CCC-A26F-732E11ACBC94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "..\UnitTest\UnitTest.csproj", "{33A631EF-9803-4E99-9855-325EE0AF3922}"
+	ProjectSection(ProjectDependencies) = postProject
+		{35FAA84B-7873-4CCC-A26F-732E11ACBC94} = {35FAA84B-7873-4CCC-A26F-732E11ACBC94}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,8 @@ Global
 		{35FAA84B-7873-4CCC-A26F-732E11ACBC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35FAA84B-7873-4CCC-A26F-732E11ACBC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35FAA84B-7873-4CCC-A26F-732E11ACBC94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A631EF-9803-4E99-9855-325EE0AF3922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A631EF-9803-4E99-9855-325EE0AF3922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
